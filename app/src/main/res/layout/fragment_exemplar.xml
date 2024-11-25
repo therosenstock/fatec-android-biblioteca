@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout3"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ExemplarFragment"
+    tools:layout_editor_absoluteX="146dp"
+    tools:layout_editor_absoluteY="48dp">
+
+    <TextView
+        android:id="@+id/tvListarE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="15dp"
+        android:scrollbars="vertical"
+        app:layout_constraintEnd_toStartOf="@+id/rbLivro"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etNomeE" />
+
+
+    <Button
+        android:id="@+id/btInserirE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="69dp"
+        android:layout_marginTop="55dp"
+        android:layout_marginEnd="67dp"
+        android:text="@string/bt_inserir"
+        app:layout_constraintEnd_toEndOf="@+id/etPaginas"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/rgExemplar" />
+
+    <Button
+        android:id="@+id/btExcluirE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/bt_excluir"
+        app:layout_constraintStart_toStartOf="@+id/btInserirE"
+        app:layout_constraintTop_toBottomOf="@+id/btInserirE" />
+
+    <Button
+        android:id="@+id/btModificarE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="21dp"
+        android:layout_marginEnd="23dp"
+        android:layout_marginBottom="16dp"
+        android:text="@string/bt_modificar"
+        app:layout_constraintBottom_toTopOf="@+id/btListarE"
+        app:layout_constraintEnd_toEndOf="@+id/textView5"
+        app:layout_constraintStart_toEndOf="@+id/etPaginas" />
+
+    <Button
+        android:id="@+id/btListarE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="9dp"
+        android:layout_marginBottom="3dp"
+        android:text="@string/bt_listar"
+        app:layout_constraintBottom_toTopOf="@+id/textView5"
+        app:layout_constraintStart_toStartOf="@+id/btModificarE" />
+
+    <EditText
+        android:id="@+id/etPaginas"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="20dp"
+        android:ems="10"
+        android:hint="@string/et_paginas"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        android:minHeight="48dp"
+        android:textColorHint="@color/black"
+        app:layout_constraintBaseline_toBaselineOf="@+id/etEdicao"
+        app:layout_constraintEnd_toStartOf="@+id/etEdicao"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/etCodigoE"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="4dp"
+        android:ems="10"
+        android:hint="@string/et_codigo"
+        android:importantForAutofill="no"
+        android:inputType="number"
+        android:textColorHint="@color/black"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btBuscarE"
+        app:layout_constraintEnd_toStartOf="@+id/btBuscarE"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="VisualLintTextFieldSize" />
+
+    <Button
+        android:id="@+id/btBuscarE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="103dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/bt_buscar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/etCodigoE"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etNomeE"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+        android:hint="@string/et_nome"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        android:textColorHint="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etCodigoE"
+        tools:ignore="TouchTargetSizeCheck,VisualLintTextFieldSize" />
+
+
+    <EditText
+        android:id="@+id/etEdicao"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="79dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="79dp"
+        android:ems="10"
+        android:hint="@string/et_edicao"
+        android:importantForAutofill="no"
+        android:inputType="number"
+        android:minHeight="48dp"
+        android:textColorHint="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/btModificarE"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/etPaginas"
+        app:layout_constraintTop_toBottomOf="@+id/etNomeE"
+        tools:ignore="VisualLintTextFieldSize" />
+
+    <EditText
+        android:id="@+id/etExemplarID"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+        android:hint="@string/et_isbn"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        android:minHeight="48dp"
+        android:textColorHint="@color/black"
+        app:layout_constraintBaseline_toBaselineOf="@+id/rbRevista"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/rbRevista"
+        tools:ignore="VisualLintTextFieldSize" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="33dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btExcluirE" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="30dp"
+        android:text="@string/menu_exemplar"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/etCodigoE"
+        app:layout_constraintTop_toTopOf="@+id/guideline" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="20dp" />
+
+    <RadioGroup
+        android:id="@+id/rgExemplar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </RadioGroup>
+
+    <RadioButton
+        android:id="@+id/rbLivro"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:text="@string/rb_livro"
+        app:layout_constraintBaseline_toBaselineOf="@+id/rbRevista"
+        app:layout_constraintEnd_toStartOf="@+id/rbRevista"
+        app:layout_constraintStart_toEndOf="@+id/tvListarE" />
+
+    <RadioButton
+        android:id="@+id/rbRevista"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="17dp"
+        android:layout_marginBottom="16dp"
+        android:text="@string/rb_revista"
+        app:layout_constraintBottom_toTopOf="@+id/etPaginas"
+        app:layout_constraintEnd_toStartOf="@+id/etExemplarID"
+        app:layout_constraintStart_toEndOf="@+id/rbLivro"
+        app:layout_constraintTop_toBottomOf="@+id/etNomeE" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

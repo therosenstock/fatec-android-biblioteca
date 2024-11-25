@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Biblioteca</string>
+    <string name="tv_inicio">Bem-vindo!</string>
+
+    <string name="menu_aluno">Cadastro Aluno</string>
+    <string name="menu_aluguel">Aluguel de Exemplar</string>
+    <string name="menu_exemplar">Cadastro Exemplar</string>
+
+    <string name="et_nome">Nome</string>
+    <string name="et_email">E-mail</string>
+    <string name="et_ra">RA</string>
+
+    <string name="et_paginas">Quantidade de Páginas</string>
+    <string name="et_codigo">Código</string>
+
+    <string name="et_issn">ISSN</string>
+    <string name="et_isbn">ISBN</string>
+    <string name="et_edicao">Edição</string>
+
+    <string name="rb_livro">Livro</string>
+    <string name="rb_revista">Revista</string>
+
+    <string name="et_devolucao">Data de Devolução</string>
+    <string name="et_retirada">Data de Retirada</string>
+
+    <string name="bt_inserir">Inserir</string>
+    <string name="bt_buscar">Buscar</string>
+    <string name="bt_modificar">Modificar</string>
+    <string name="bt_listar">Listar</string>
+    <string name="bt_excluir">Excluir</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
